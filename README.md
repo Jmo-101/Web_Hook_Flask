@@ -75,6 +75,19 @@ This step involved the creation and configuration of a webhook. We used our EC2 
 
 <img width="350" alt="Screenshot 2023-09-16 at 3 00 26 AM" src="https://github.com/Jmo-101/Web_Hook_Flask/assets/138607757/296878f3-b97b-4d18-bf74-7e1c6bf678d2">
 
+# Troubleshooting
+
+During the deployment process, I encountered several issues:
+
+1. **EC2 AWS Installations:**
+
+   The first problem I encountered was related to EC2 AWS installations. The server kept indicating that pip was not installed, even though I had previously installed "python-pip." To resolve this issue, I installed "python3-pip" in addition to "python-pip."
+
+2. **Jenkinsfile 'deploy' Stage:**
+
+   The second problem arose when adding the 'deploy' stage to the Jenkinsfile. I initially placed the code in the wrong section of the file. When I ran the code through Jenkins, it was unsuccessful. Realizing I messed up the code placement , I corrected it and ran the pipeline again, which resulted in a success.
+
+
 ## Bonus: Automatic Deployment
 
 As an added bonus, once the webhook was configured, I made a specific change to the `home.html` file on GitHub. I changed a URL label to “Type something here.” With the webhook in place, this change triggered an automatic deployment into Jenkins.
