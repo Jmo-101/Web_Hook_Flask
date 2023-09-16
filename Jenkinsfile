@@ -12,7 +12,7 @@ pipeline {
         flask run &
         '''
      }
-    } 
+     
    
     stage ('test') {
       steps {
@@ -21,7 +21,7 @@ pipeline {
         py.test --verbose --junit-xml test-reports/results.xml
         ''' 
       }
-    } 
+    
 
     stage ('Deploy') { 
         steps { 
@@ -29,7 +29,7 @@ pipeline {
           /var/lib/jenkins/.local/bin/eb deploy
           ''' 
         } 
-      } 
+       
     
       post{
         always {
@@ -38,6 +38,6 @@ pipeline {
        
       }
     }
-    
+    }
   }
 
