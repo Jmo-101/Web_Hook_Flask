@@ -26,7 +26,8 @@ pipeline {
     stage ('Deploy') { 
         steps { 
           sh '''#!/bin/bash
-          /var/lib/jenkins/.local/bin/eb deploy''' 
+          /var/lib/jenkins/.local/bin/eb deploy
+          ''' 
         } 
       } 
     
