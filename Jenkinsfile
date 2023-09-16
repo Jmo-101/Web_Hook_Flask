@@ -1,7 +1,7 @@
 pipeline {
   agent any
-   stages {
-    stage ('Build') {
+  stages {
+    stage('Build') {
       steps {
         sh '''#!/bin/bash
         python3 -m venv test3
@@ -11,31 +11,25 @@ pipeline {
         export FLASK_APP=application
         flask run &
         '''
-     }
-    } 
-   
-    stage ('test') {
+      }
+    }
+    stage('test') {
       steps {
         sh '''#!/bin/bash
         source test3/bin/activate
         py.test --verbose --junit-xml test-reports/results.xml
-        ''' 
+        '''
       }
-    }
-
-    stage ('Deploy') { 
-        steps { 
-          sh '''#!/bin/bash
-          /var/lib/jenkins/.local/bin/eb deploy
-          ''' 
-        } 
-    }
-    
-      post{
+      post {
         always {
           junit 'test-reports/results.xml'
         }
-       
+      }
+    }
+    stage('Deploy') {
+      steps {
+        sh '/var/lib/jenkins/.local/bin/eb deploy'
       }
     }
   }
+}
