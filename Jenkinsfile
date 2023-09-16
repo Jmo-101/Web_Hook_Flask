@@ -12,6 +12,7 @@ pipeline {
         flask run &
         '''
      }
+    } 
    
     stage ('test') {
       steps {
@@ -20,6 +21,7 @@ pipeline {
         py.test --verbose --junit-xml test-reports/results.xml
         ''' 
       }
+    } 
 
     stage ('Deploy') { 
         steps { 
