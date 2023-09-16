@@ -71,6 +71,8 @@ This step involved the creation and configuration of a webhook. We used our EC2 
 
 <img width="350" alt="Screenshot 2023-09-16 at 2 57 22 AM" src="https://github.com/Jmo-101/Web_Hook_Flask/assets/138607757/c00fd271-c537-4d09-9838-3ad2178728b7">
 
+<img width="350" alt="Screenshot 2023-09-16 at 3 00 26 AM" src="https://github.com/Jmo-101/Web_Hook_Flask/assets/138607757/296878f3-b97b-4d18-bf74-7e1c6bf678d2">
+
 ## Bonus: Automatic Deployment
 
 As an added bonus, once the webhook was configured, I made a specific change to the `home.html` file on GitHub. I changed a URL label to “Type something here.” With the webhook in place, this change triggered an automatic deployment into Jenkins.
