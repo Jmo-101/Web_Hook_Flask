@@ -27,6 +27,8 @@ sudo apt-get install Jenkins
 Once Jenkins was installed. Python needed to be installed with the command “sudo install python3.10-ven”. Also had to install “python-pip” and “unzip”.
 Once everything is installed, we head over to the Jenkins server using the Public IP address from our EC2 instance. We created a multibranch pipeline on Jenkins using the GitHub repository the application files are in and added credentials to it. When deployed the application ran successfully. 
 
+<img width="650" alt="Screenshot 2023-09-15 at 10 11 34 PM" src="https://github.com/Jmo-101/Web_Hook_Flask/assets/138607757/486a5d58-c59f-428a-b41a-e11e605117c4">
+
 # AWS-EB-CLI
 
 For this step, I am setting up Elastic Beanstalk for the application I'm running. Here are the steps involved:
