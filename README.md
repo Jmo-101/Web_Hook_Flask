@@ -8,6 +8,8 @@ This project showcases the use of Jenkins & a webhook to automate the testing st
 
 ## Planning
 
+<img width="700" alt="Screenshot 2023-09-16 at 9 34 53 AM" src="https://github.com/Jmo-101/Web_Hook_Flask/assets/138607757/ef402a26-71cb-43c7-a0b0-cab94407bd73">
+
 ### Installing Jenkins & Python
 
 I started off by installing Jenkins into my EC2 server by using a series of commands:
