@@ -4,7 +4,7 @@
 
 # Webhook Flask
 
-This project showcases the use of Jenkins to automate the testing stages of a deployment. While also allowing the user to create commands to install Python and AWS Elastic Beanstalk into an EC2 server.
+This project showcases the use of Jenkins & a webhook to automate the testing stages of a deployment. While also allowing the user to create commands to install Python and AWS Elastic Beanstalk into an EC2 server.
 
 ## Planning
 
