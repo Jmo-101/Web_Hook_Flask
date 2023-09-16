@@ -69,6 +69,7 @@ This stage was added towards the end of the Jenkinsfile, and it adds the "deploy
 
 This step involved the creation and configuration of a webhook. We used our EC2 Public IP to set up the webhook in a way that, if anything was changed in the GitHub Repository, it would automatically trigger a push to Jenkins for testing. This automated process even further.
 
+<img width="350" alt="Screenshot 2023-09-16 at 2 57 22 AM" src="https://github.com/Jmo-101/Web_Hook_Flask/assets/138607757/c00fd271-c537-4d09-9838-3ad2178728b7">
 
 ## Bonus: Automatic Deployment
 
