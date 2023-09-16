@@ -46,7 +46,7 @@ For this step, I am setting up Elastic Beanstalk for the application I'm running
 
 ## Addition to Jenkins
 
-To integrate this Elastic Beanstalk setup into our Jenkins pipeline, I added the following stage to our Jenkinsfile:
+I added the following stage to my Jenkinsfile, which is the 'deploy' stage:
 
 ```groovy
 stage ('Deploy') { 
