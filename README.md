@@ -87,6 +87,8 @@ During the deployment process, I encountered several issues:
 
    The second problem arose when adding the 'deploy' stage to the Jenkinsfile. I initially placed the code in the wrong section of the file. When I ran the code through Jenkins, it was unsuccessful. Realizing I messed up the code placement , I corrected it and ran the pipeline again, which resulted in a success.
 
+<img width="500" alt="Screenshot 2023-09-15 at 11 43 00 PM" src="https://github.com/Jmo-101/Web_Hook_Flask/assets/138607757/01354f76-a177-4ab1-bd24-3901181d9a89">
+
 
 ## Bonus: Automatic Deployment
 
