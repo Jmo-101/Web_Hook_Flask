@@ -55,5 +55,20 @@ stage ('Deploy') {
     } 
 }
 
+```
+This stage was added towards the end of the Jenkinsfile, and it adds the "deploy" stage to the Jenkins pipeline.
+
+# Webhook
+
+## Webhook Configuration
+
+This step involved the creation and configuration of a webhook. We used our EC2 Public IP to set up the webhook in a way that, if anything was changed in the GitHub Repository, it would automatically trigger a push to Jenkins for testing. This automated process even further
+
+## Bonus: Automatic Deployment
+
+As an added bonus, once the webhook was configured, I made a specific change to the `home.html` file on GitHub. I changed a URL label to “Type something here.” With the webhook in place, this change triggered an automatic deployment into Jenkins.
+
+After the change ran successfully on Jenkins and the testing was complete, the changes were pushed onto the actual application.
+
 
 
