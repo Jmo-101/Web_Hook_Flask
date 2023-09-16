@@ -60,7 +60,7 @@ stage ('Deploy') {
 ```
 This stage was added towards the end of the Jenkinsfile, and it adds the "deploy" stage to the Jenkins pipeline.
 
-<img width="450" alt="Screenshot 2023-09-16 at 2 52 24 AM" src="https://github.com/Jmo-101/Web_Hook_Flask/assets/138607757/416672db-5e96-40aa-946c-a5f6e595d0f6">
+<img width="448" alt="Screenshot 2023-09-16 at 2 52 24 AM" src="https://github.com/Jmo-101/Web_Hook_Flask/assets/138607757/416672db-5e96-40aa-946c-a5f6e595d0f6">
 
 
 # Webhook
