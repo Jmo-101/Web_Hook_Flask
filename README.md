@@ -1,26 +1,25 @@
 <p align="center">
 <img src="https://github.com/kura-labs-org/kuralabs_deployment_1/blob/main/Kuralogo.png">
 </p>
-<h1 align="center">C4_deployment-3<h1> 
 
-Demonstrate your ability deploy a fully automated Elastic Beanstalk deployment.
+# Webhook Flask
 
-- Create a separate GitHub repository for this application 
+This project showcases the use of Jenkins to automate the testing stages of a deployment. While also allowing the user to create commands to install Python and AWS Elastic Beanstalk into an EC2 server.
 
-- Download the files from this repository and upload them to your newly created repository 
+## Planning
 
-- Be sure to follow the deployment instructions from this repository  
+### Installing Jenkins & Python
 
-- Document your progress in a .md file in your repository. Also, document any issues you may run into and what you did to fix them.
+I started off by installing Jenkins into my EC2 server by using a series of commands:
 
-- Make sure your documentation includes these sections:
-  - Purpose
-  - Issues
-  - Steps
-  - System Diagram
-  - Optimization (How would make this deployment more efficient)
+```bash
+curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee \
+    /usr/share/keyrings/jenkins-keyring.asc > /dev/null
 
-- Lastly, save your documentation and diagram into your repository. Submit your repository link to the LMS
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+    https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+    /etc/apt/sources.list.d/jenkins.list > /dev/null
 
-## Deployment instructions Link:
--  Link to instructions: https://github.com/kura-labs-org/c4_deployment-3/blob/main/Deployment-instructions.md
+sudo apt-get update
+sudo apt-get install fontconfig openjdk-11-jre
+sudo apt-get install Jenkins
